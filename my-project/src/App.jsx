@@ -7,6 +7,10 @@ import Directory from './components/Directory.jsx'
 import Home from './components/Home.jsx'
 import Announcement from './components/Announcement.jsx'
 import Gallery from './components/Gallery.jsx'
+import Login from './components/Login.jsx'
+import Register from './components/Register.jsx'
+import Error from './components/Error.jsx'
+
 
 function App() {
 
@@ -14,7 +18,10 @@ function App() {
     <Router className='bg-#e3d5ca dark:bg-gray-900 dark:text-white duration-200 overflow-hidden overflow-y-scroll transition-all'>
       <Navbar/>
       <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Login/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path="*" element={<Error/>}/>
           <Route path='/blogs' element={<Blogs/>}/>
           <Route path='/hr' element={<Hr/>}/>
           <Route path='/directory' element={<Directory/>}/>
