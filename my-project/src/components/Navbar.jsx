@@ -43,12 +43,12 @@ const Navbar = () => {
                     {/* Menu items */}
                 </div>
                     <div className='hidden lg:block'>
-                        <ul className='flex items-center gap-4'>
+                        <ul className='flex items-center pt-3 gap-3 mr-13'>
                             {
                                 MenuLinks.map((data,index) => (
                                     <li key={index}>
                                         <Link to={data.link}
-                                        className='inline-block px-4 font-semibold text-gray-500 hover:text-primary
+                                        className='inline-block text-xl px-3 font-semibold text-gray-500 hover:text-primary
                                         dark:hover:text-primary duration-200'
                                         >
                                             {""}
@@ -59,17 +59,17 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                <div className='text-bold text-xl hidden lg:block '>
+                {/* <div className='text-bold text-xl hidden lg:block '>
                     <p>Welcome Aayush😃</p>
-                </div>
+                </div> */}
                 {/* Navbar right section */}                
                 <div className=''>
                     <div className='pt-2'>
                         <DarkMode />
                         <p className="w-12"></p>
-
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
