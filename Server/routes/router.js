@@ -6,7 +6,7 @@ const authenticate = require("../middleware/authenticate");
 
 // for user registeration
 
-router.post("/register", async (req, res) => {
+router.post("/api/register", async (req, res) => {
     const { fname, email, password, cpassword } = req.body;
 
     if (!fname || !email || !password || !cpassword) {
@@ -32,7 +32,7 @@ router.post("/register", async (req, res) => {
     }
 })
 
-router.post("/login", async (req, res) => {
+router.post("/api/login", async (req, res) => {
     const { email, password } = req.body;
 
     if (!email || !password) {
@@ -75,7 +75,7 @@ router.post("/login", async (req, res) => {
 //user validation
 
 // user valid
-router.get("/validuser", authenticate, async (req, res) => {
+router.get("/api/validuser", authenticate, async (req, res) => {
     try {
         const ValidUserOne = await userdb.findOne({ _id: req.userId });
         res.status(201).json({ status: 201, ValidUserOne });
