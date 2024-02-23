@@ -10,13 +10,14 @@ import Gallery from './components/Gallery.jsx'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
 import Error from './components/Error.jsx'
+import Documents from './components/Documents.jsx'
+import Analytics from './components/Analytics.jsx'
 
 
 function App() {
 
   return (
     <Router className='bg-#e3d5ca dark:bg-gray-900 dark:text-white duration-200 overflow-hidden overflow-y-scroll transition-all'>
-      <Navbar/>
       <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
@@ -27,12 +28,11 @@ function App() {
           <Route path='/directory' element={<Directory/>}/>
           <Route path='/announcement' element={<Announcement/>}/>
           <Route path='/gallery' element={<Gallery/>}/>
+          <Route path='/documents' element={<Documents/>}/>
+          <Route path='/analytics' element={<Analytics/>}/>
       </Routes>
     </Router>
   )
-  {/* <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden transition-all'>
-    <Navbar/>
-  </div> */}
 }
 
 export default App

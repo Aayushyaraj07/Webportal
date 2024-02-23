@@ -6,7 +6,7 @@ const MenuLinks = [
     {
         id: 1,
         name: "Home",
-        link: "/#",
+        link: "/home",
     },
     {
         id: 2,
@@ -28,22 +28,21 @@ const MenuLinks = [
 
 const Navbar = () => {
   return (
-    <div className='bg-red-100 dark:bg-zinc-900 dark:text-white border-b duration-200 relative z-40'>
+    <div className='bg-yellow-100 h-[12vh] dark:bg-zinc-900  dark:text-white border-b duration-200 relative z-40'>
         <div className='py-4 flex justify-between'>
             <div className="container flex justify-between ">
                 {/* Logo and links section */}
                 <div className='flex justify-between items-center'>
-                    <Link to="#"
+                    <Link to={"/home"}
                     className='text-primary
                     font-semibold tracking-widest text-2xl uppercase
-                    sm:text-3xl'
-                    >
-                    9a-business
+                    sm:text-3xl mb-7'>
+                    9A Business
                     </Link>
                     {/* Menu items */}
                 </div>
                     <div className='hidden lg:block'>
-                        <ul className='flex items-center pt-3 gap-3 mr-13'>
+                        <ul className='flex items-center pt-3 gap-3 mr-32'>
                             {
                                 MenuLinks.map((data,index) => (
                                     <li key={index}>

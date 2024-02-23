@@ -13,7 +13,8 @@ export default {
         brandYellow: "#fdc62e",
         brandBlue: "#1376f4",
         brandWhite: "#eeeeee",
-        dnavbar:"#FC6736"
+        dnavbar:"#FC6736",
+        ctext:"GRAY"
       },
       container:{
         center:true,
