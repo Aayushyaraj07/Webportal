@@ -59,9 +59,7 @@ const DarkMode = () => {
                                             alt="Dp"
                                             className='object-cover cursor-pointer border-2  w-[48px] h-[48px] rounded-full overflow-hidden' />
                                     {
-                                        open && (
-                                            
-                                        )
+                                        open && 
                                     }       
                     </div>
             </div>
