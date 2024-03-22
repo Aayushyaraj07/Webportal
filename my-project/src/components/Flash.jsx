@@ -9,12 +9,12 @@ const Flash = () => {
             <Marquee speed={60} gradient={false} pauseOnHover>
             <div className='announcement-text text1'>
                 <span>Announcement📢</span>
-                <span>This announcement is regarding the webportal frontend part which has started taking shape!</span>
+                <span>L&T Construction HR Wins Top Honours at SHRM HR Excellence Awards!</span>
             </div>
             <div className='announcement-text text2'>
-                <span>Another announcement📢</span>
-                <span>This announcement is regarding the webportal frontend part which has started taking shape!</span>
+                <span>L&T Infotech and Mindtree Merger </span>
             </div>
+            <div>*</div>
             </Marquee>
         </div>
     </Link>

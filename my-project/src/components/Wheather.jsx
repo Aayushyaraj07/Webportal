@@ -1,6 +1,6 @@
 import React from 'react'
 import "../assets/website/wheather.css"
-import search_icon from "../assets/website/search.png"
+import search_icon from "../assets/website/search1.png"
 import clear_icon from "../assets/website/clear.png"
 import cloud_icon from "../assets/website/cloud.png"
 import drizzle_icon from "../assets/website/drizzle.png"
@@ -68,7 +68,7 @@ const Wheather = () => {
                                 <img src={analytics}
                                 alt="img"
                                 className='mx-auto mt-5 w-36' />
-                                <h2 className='font-semibold hidden group-hover:block text-end text-sm mr-3 mb-3'>View more &rarr;</h2>
+                                <h2 className='font-semibold hidden group-hover:block text-end text-sm mr-3 pb-6'>View more &rarr;</h2>
                             </Link>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const Wheather = () => {
                                 <div className='w-1/3 flex flex-col justify-center gap-1'>
                                     <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             alt="Dp"
-                                            className='w-[56px] h-[54px] rounded-full overflow-hidden' />
+                                            className='w-[56px] h-[54px] rounded-full overflow-hidden object-cover' />
                                     <div className='flex flex-col justify-center'>
                                     <div><h2 className='font-semibold'>Manish Malhotra</h2></div>
                                         <div><h6 className='text-gray-500 text-xs'>Software Developer</h6></div>
@@ -102,7 +102,7 @@ const Wheather = () => {
                                     <div className='overflow-hidden  rounded-full w-[4vw] h-[4vw]'>
                                     <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             alt="Dp"
-                                            className='w-[56px] h-[54px]  rounded-full overflow-hidden ' />
+                                            className='w-[56px] h-[54px]  rounded-full overflow-hidden object-cover' />
                                     </div>
                                     <div className='flex flex-col justify-center'>
                                     <div><h2 className='font-semibold'>Hemisha Mehta</h2></div>
@@ -114,7 +114,7 @@ const Wheather = () => {
                                 <div className='rounded-full w-[4vw] h-[4vw]'>
                                     <img src="https://img.freepik.com/free-photo/worldface-pakistani-guy-white-background_53876-14466.jpg?size=626&ext=jpg&ga=GA1.1.1237358851.1690999832&semt=ais"
                                             alt="Dp"
-                                            className='w-[56px] h-[54px]  rounded-full overflow-hidden ' />
+                                            className='w-[56px] h-[54px]  rounded-full overflow-hidden object-cover' />
                                     </div>
                                     <div className='flex flex-col justify-center'>
                                     <div><h2 className='font-semibold'>Suraj Vishwakarma</h2></div>
