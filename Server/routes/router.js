@@ -1,6 +1,6 @@
 const express = require("express");
 const userdb = require("../models/userSchema");
-const router = new express.Router();
+const router = new express.Router();    
 const bcrypt = require("bcryptjs");
 const authenticate = require("../middleware/authenticate");
 
@@ -38,8 +38,8 @@ router.post("/api/login", async (req, res) => {
     if (!email || !password) {
         res.status(422).json({ error: "Fill all the details" })
     }
-
-    try {
+    
+     try {
         const userValid = await userdb.findOne({ Email: email })
         if (userValid) {
             const isMatch = await bcrypt.compare(password, userValid.Password)
@@ -63,10 +63,10 @@ router.post("/api/login", async (req, res) => {
                 res.status(201).json({ status: 201, result })
             }
         }
-        else{
+        else {
             res.status(422).json({ error: "Email not found" })
         }
-        
+
     } catch (error) {
 
     }
@@ -75,7 +75,7 @@ router.post("/api/login", async (req, res) => {
 //user validation
 
 // user valid
-router.get("/api/validuser", authenticate, async (req, res) => {
+router.get("/api/validuser", authenticate , async (req, res) => {
     try {
         const ValidUserOne = await userdb.findOne({ _id: req.userId });
         res.status(201).json({ status: 201, ValidUserOne });
@@ -84,4 +84,4 @@ router.get("/api/validuser", authenticate, async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = router;    
