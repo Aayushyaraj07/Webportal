@@ -5,6 +5,8 @@ import Quote from './Quote'
 import Welcome from './Welcome'
 import Flash from './Flash'
 import Thirdpage from './Thirdpage'
+import Navbar from './Navbar';
+import News from './News';
 
 export default function Home() {
 
@@ -35,16 +37,20 @@ useEffect(()=>{
     DashboardValid();
 })
   return (
-    <div className='bg-blue-100 dark:bg-gray-900 dark:text-white duration-200 overflow-hidden transition-all '>
-      <Flash/>
-        <div>
-            <div className='flex justify-between items-center mx-8 '>
-            <Welcome/>
-            <Quote/>
+      <div>
+        <Navbar/>
+          <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden transition-all '>
+              {/* <Flash/> */}
+                <div>
+                    
+                    <Welcome/>
+                    {/* <Quote/> */}
+                   
+                  {/* <Hero/> */}
+                  {/* <Thirdpage/> */}
+                  {/* <News/> */}
+                </div>
             </div>
-           <Hero/>
-           <Thirdpage/>
-        </div>
-    </div>
+      </div>
   )
 }

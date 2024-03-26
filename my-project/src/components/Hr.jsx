@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Hr = () => {
   return (
-    <div>Human Resources</div>
+
+    <div>
+      <Navbar/>
+      <h1>Human Resource</h1>
+    </div>
   )
 }
 
