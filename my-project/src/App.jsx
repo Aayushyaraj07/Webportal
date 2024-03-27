@@ -13,6 +13,7 @@ import Error from './components/Error.jsx'
 import Documents from './components/Documents.jsx'
 import Analytics from './components/Analytics.jsx'
 import Userprofile from './components/Userprofile.jsx'
+import Welcome from './components/Welcome.jsx'
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path='/gallery' element={<Gallery/>}/>
           <Route path='/documents' element={<Documents/>}/>
           <Route path='/analytics' element={<Analytics/>}/>
+          <Route path='/welcome' element={<Welcome/>}/>
           <Route path='/userprofile' element={<Userprofile/>}/>
       </Routes>
     </Router>

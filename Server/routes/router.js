@@ -88,12 +88,12 @@ router.get("/api/validuser", authenticate , async (req, res) => {
 // Post method for announcements(Images)
 
 router.post("/api/welcome",async(req,res)=>{
-    const {title} = req.body;
-    console.log(typeof(title));
-    const announcementsTitle = await announcementDB.find()
-    console.log(typeof(announcementsTitle));
-    console.log(announcementsTitle);
-    res.json(announcementsTitle);
+    // const {title} = req.body;
+    // console.log(typeof(title));
+    const announcementsData = await announcementDB.find()
+    // console.log(typeof(announcementsTitle));
+    // console.log(announcementsTitle);
+    res.json(announcementsData);
 });
 // router.post("/api/welcome",async(req,res)=>{
 //     console.log(req.title);
