@@ -26,15 +26,15 @@ html {
 
 @layer base{
     :root{
-        --fill-color:"#000"
+        --fill-color:rgb(2 6 23)
     }
     .redd{
-        --fill-color:"#0B5D1E"
+        --fill-color:rgb(130 0 52) 
     }
     .yelloow{
-        --fill-color:"#139A43"
+        --fill-color:rgb(234 179 8)
     }
     .bluee{
-        --fill-color:"#8CFFDA"
+        --fill-color:rgb(59 130 246)
     }
 }

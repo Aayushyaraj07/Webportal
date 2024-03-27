@@ -32,7 +32,7 @@ const Welcome = () => {
       <Sidebar/>
       <Chatgpt/>
       <div className='w-full leading-tight h-full text-wrap '>
-        <div className='h-[250px] bg-f9 -mb-[150px]'>
+        <div className='h-[250px] bg-skin-fill -mb-[150px]'>
           <p className='font-semibold text-white text-4xl text-start p-6 ml-[88px] pt-10'>Welcome, Aayush!</p>
         </div>
         <div className='h-50% mx-auto rounded-2xl bg-slate-100 w-5/6 shadow-cyan-500/50  shadow-2xl'>
