@@ -63,7 +63,7 @@ const Login = () => {
             });
 
         const res = await data.json();
-        console.log(res);
+        // console.log(res);
 
         if(res.status === 201){
             localStorage.setItem("userdatatoken",res.result.token)
@@ -72,7 +72,6 @@ const Login = () => {
         }else{
             console.log("Invalid");
         }
-
         }
     }
 

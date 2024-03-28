@@ -1,4 +1,4 @@
-import React, { useEffect,useState  } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../assets/website/welcome.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -26,35 +26,40 @@ const settings = {
 let teme = localStorage.getItem("theme")
 
 const Welcome = () => {
-  console.log("In anouncement section");
 
-  // const data = async (e) => {
+  const fetchInfo = () => {
+    return fetch("/api/welcome", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          // body: JSON.stringify({
+          //     title, description, image
+          // })
+        })
+      .then((res) => res.json())
+      .then(data=> console.log(data))
+  }
+
+  // const fetchInfo = async () => {
   //   const data = await fetch("/api/welcome", {
   //     method: "POST",
   //     headers: {
   //       "Content-Type": "application/json"
   //     },
-  //     body: JSON.stringify({
-  //       title, description, image
-  //     })
+  //     // body: JSON.stringify({
+  //     //     title, description, image
+  //     // })
   //   });
-
   //   const res = await data.json();
-  //   console.log(res.status);
+  //   console.log(res);
+  //   // return res;
   // }
-
-  const url = "/api/welcome";
-  const [data, setData] = useState([]);
-
-  const fetchInfo = () => {
-    return fetch(url)
-      .then((res) => res.json())
-      .then((d) => setData(d))
-  }
 
   useEffect(() => {
     fetchInfo();
   }, []);
+
   return (
     <div className='flex justify-center -z-10 gap-0'>
       <Sidebar />
